@@ -1,0 +1,5 @@
+{
+    "token": "", //Seu bot token
+    "client_id": "", //Seu bot client_id
+    "PORT": 5000
+}  
