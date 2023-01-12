@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
-<<<<<<< HEAD
 const Discord = require("discord.js");
 
 const Pause = {
@@ -32,23 +31,3 @@ const Pause = {
 }
 
 module.exports = Pause;
-=======
-
-module.exports = {
-    data: new SlashCommandBuilder()
-    .setName("pause")
-    .setDescription("Pausa o som atual"),
-
-
-    execute: async ({client, interaction}) => {
-        const queue = client.player.getQueue(interaction.guildId);
-        const song = queue.current;
-
-        if (!queue) return;
-
-        queue.setPaused(true)
- 
-        await interaction.reply(`A musica ${song.title} foi pausada!`);
-    }
-}
->>>>>>> 575e3ef64a76ffa22f3081d439473c2eeb0ff4aa

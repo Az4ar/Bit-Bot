@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-<<<<<<< HEAD
 const Discord = require("discord.js");
 
 const Stop = {
@@ -36,22 +35,3 @@ const Stop = {
     }
 }
 module.exports = Stop;
-=======
-
-module.exports = {
-    data: new SlashCommandBuilder()
-    .setName('stop')
-    .setDescription(`Interrompe a musica`),
-    execute: async({client, interaction}) => {
-        try {
-            let queue = client.player.getQueue(interaction.guild.id);
-
-            if (!interaction.member.voice.channel) return interaction.reply("Entre em um canal de voz para começar a festa🎈🎈🎈");
-
-            queue.stop();
-        } catch(err){
-            console.log(err);
-        }
-    }
-}
->>>>>>> 575e3ef64a76ffa22f3081d439473c2eeb0ff4aa
