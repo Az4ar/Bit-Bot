@@ -1,5 +1,10 @@
 {
+<<<<<<< HEAD
     "token": "", 
     "client_id": "", 
+=======
+    "token": "", //Seu bot token
+    "client_id": "", //Seu bot client_id
+>>>>>>> 575e3ef64a76ffa22f3081d439473c2eeb0ff4aa
     "PORT": 5000
 }  
